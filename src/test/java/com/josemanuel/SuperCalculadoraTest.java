@@ -36,14 +36,16 @@ public class SuperCalculadoraTest {
         return testOut.toString();
     }
 
+    //Test de prueba para probar la operacion de suma:
     @Test
     @DisplayName("Test entrada a Menú de Aritmética, opción A")
     public void testCasoMenuAritmetica() {
        
-        provideInput("A\n1\n10\n33\nX\nX");
+        //Comandos para acceder, ejecutar , introducir valores y salir de la aplicacion:
+        provideInput("A\n1\n13\n33\nX\nX");
         
         SuperCalculadora.main(new String[0]);
-        assertThat(getOutput(), containsString("Resultado: 43") );
+        assertThat(getOutput(), containsString("Resultado: 46") ); //<----- El resultado esperado
         
     }
 

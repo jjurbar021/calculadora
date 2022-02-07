@@ -12,10 +12,12 @@ public class FuncionSuma implements Function<Scanner, Void>{
         System.out.println("\nOperación seleccionada suma:\n");
         System.out.println("A + B\n");
         
+        //Pasamos el valor A:
         System.out.println("Introduzca A:");
         String aStr = sc.next();
         BigDecimal aBD = new BigDecimal(aStr);
 
+        //Pasamos el valor B:
         System.out.println("Introduzca B:");
         String bStr = sc.next();
         BigDecimal bBD = new BigDecimal(bStr);
